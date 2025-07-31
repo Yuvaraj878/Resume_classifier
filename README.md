@@ -10,15 +10,6 @@ This repository contains an end-to-end pipeline for classifying resumes into job
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Dataset](#dataset)
-- [Directory Structure](#directory-structure)
-- [Usage](#usage)
-  - [1. Preprocessing](#1-preprocessing)
-  - [2. Vectorization](#2-vectorization)
-  - [3. Model Training](#3-model-training)
-  - [4. Evaluation](#4-evaluation)
-- [Example Predictions](#example-predictions)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -46,3 +37,28 @@ Additionally, download the spaCy English model:
 
 ```bash
 python -m spacy download en_core_web_sm
+```
+
+## Installation
+
+Clone this repository:
+
+```bash
+git clone https://github.com/your-username/resume-classifier.git
+cd resume-classifier
+
+```
+
+## Dataset
+Place your CSV file named UpdatedResumeDataSet.csv in the project root. Ensure it contains at least two columns:
+
+  Resume: raw text of the candidate's resume
+
+  Category: target job category label
+
+Resume,Category
+"Experienced software engineer with expertise in Python, Java, and machine learning projects.","Software Engineer"
+"Detail-oriented accountant proficient in QuickBooks, financial reporting, and tax planning.","Accountant"
+"Marketing specialist skilled in SEO, content creation, and social media management.","Marketing Specialist"
+"Registered nurse with strong patient care, clinical assessment, and medication administration experience.","Nurse"
+
